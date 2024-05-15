@@ -1,0 +1,770 @@
+    /*
+    Responsive CSS
+    Tablet and Mobile
+    */  
+    @media only screen and (max-width: 1366px){
+        .test:after  { content: '@media (max-width: 1366px)';}
+        .header_top{padding: 5px;}
+    }
+    
+    @media only screen and (max-width: 1295px){
+        .test:after  { content: '@media (max-width: 1295px)';}
+        .header_top .container_1336 > .row{display: flex; text-align: center; flex-wrap: wrap; justify-content: center;}
+    }
+     
+    @media only screen and (max-width: 1155px){
+        .test:after  { content: '@media (max-width: 1155px)';} 
+        .slideshow .slideshow_heding{padding-left: 15px;padding-right: 15px;} 
+        .owl-nav{margin: 0 15px;}
+        .container{padding: 0 15px;}
+        .about{padding-top: 88px; padding-bottom: 98px;}
+        .about .about_left .advantages{padding-top: 80px;}
+        .services .container .row{display: flex; flex-wrap: wrap; justify-content: center;}
+        .services_item{width: calc(33.3% - 30px);}
+    }
+    
+    @media only screen and (max-width: 1024px){
+        .test:after  { content: '@media (max-width: 1024px)';}
+        .header_bottom {padding: 20px 20px 20px 20px;}
+        nav ul li a {margin: 0 7px;}
+        header .menu {width: 63%;padding-right: 0;text-align: center;padding-top: 10px;}
+        .header_btn {width: 17%;}
+        .header_btn .btn_white {float: right;min-width: inherit;padding: 8px 10px;font-size: 14px;line-height: 1;}
+        .contact_info{margin-right: 50px;}
+        .news .news_item_content { padding: 20px; }
+        .news .container .row{display: flex; flex-wrap: wrap;}
+        .news .news_item_vn{height:100%;}
+        .news .news_item_image::before{background-position: center;}
+        .brands .brands_desc{margin-top: 60px;}
+        .tabs .tab_content .tab_content_l {padding: 47px 0 30px 47px;}
+        .about .advantages_item:nth-child(2) {margin-left: 160px;}
+        .about .advantages_item:nth-child(3) { margin-left: 70px; }
+        .certificates .owl_certificates .item {padding: 10px;}
+        .brands {padding: 0px 0 102px 0;}
+        .aboutus .about {padding: 0 20px;}
+        .aboutus .gets .advantages {padding-left: 30px;}  
+        .aboutus .costum_text , .get_service { padding: 60px 0 60px 0;}
+        .aboutus .costum_text_img img:nth-child(2){margin-top: 30px;}
+        footer .top_footer {padding: 85px 0 45px 0;} 
+        #menu_right_sidebar {display: block; right: 0;position: fixed;}
+        .menu-right-button {color: white;background: var(--theme_color_two);padding: 5px 10px 3px 10px;}
+        .menu-right-button:hover {background: var(--theme_color); color: white;}
+        .slideshow .slideshow-image {display: none!important;}
+        .slideshow .slideshow_heding {text-align: center;min-height: 570px;background-color: rgba(255, 255, 255, 0.80);} 
+        .owl-nav {display: flex;justify-content: center;bottom: 5%;}
+       .row-15 {margin: 0!important;}
+       .aboutus .news {padding: 60px 0 0px 0;} 
+       .prices h4 {text-align: center;margin-bottom: 30px;}
+       .prices:after , .prices:before {display: none;}
+       .prices {padding: 50px 0 50px 0;margin: 50px 0 0px 0;}
+       .header_title, .service_page_simple .header_title {padding: 50px;}
+       .header_title h1 {margin-bottom: 30px;}
+       .menu nav ul li a {padding: 0 2px;}
+       .info_blok .info_blok_title h4 {margin-bottom: 40px;}
+       
+        /* Our Staff Page */
+        #specialists .ui-widget-header {border: none; margin-bottom: 40px;}
+        #specialists .ui-tabs .ui-tabs-nav li {float: none;}  
+        
+        /* Our Dentists Page */
+        .ourdentists .head_physician_sign .dentalic_signature {margin-right: 150px;}
+        .ourdentists .head_physician_sign {margin-top: 30px;}
+        .ourdentists .head_physician_sign .dentalic_stamp {top: -15px;}
+        .specialists .special_img {width: 33%;}
+        .specialists .special_desk {padding-left: 50px;}
+        .specialists .specialists_row:nth-child(2n) .special_desk {padding-right: 50px;}
+        .specialists .special_desk .special_desk_title_row {padding: 30px 0 30px 0;} 
+        .short_bio .list_row ul {min-height: 440px;} 
+    
+        /* Testimonials Page */
+        .make_us_row h1 {text-align: center;}
+        .leave_feedback {    padding: 295px 0 190px 0;margin-top: -200px;}
+        .recent_testimonials {padding: 0;}
+        .testimonials .ale_bg_overlay {width: 100%;}
+        .testimonials .owl-nav {bottom: 5%;left: 5%;}
+        .testimonials .item .container {padding: 0 20px 0 22.5%;z-index: 2;}
+        .recent_testimonials h4 {margin-bottom: 65px;}
+        
+        /* Service Page */
+        .posts_item_title { font-size: 42px;  margin-bottom: 25px; line-height: 52px;}
+        .posts_item_text p {  margin-bottom: 25px;}
+        .exeptional_img img:first-child {margin-left: 0;}
+        .exeptional_img img {width: 19%;}
+        .header_title p {max-width: 100%;}
+        
+        /* Simple Service Page */
+        .header_i i {  font-size: 350px; }
+        .stories { padding: 25px 0 25px 0; }
+        .header_tag {max-width: 100%;}
+        .service_page_simple .specialists h4 {text-align: center; margin-bottom: 50px;}
+        
+        /* Blog */
+        .col_left {padding-right: 5%;}
+        .sidebar .input_white input[type="submit"] {min-width: auto!important;}
+        .block_sidebar_content {padding: 20px;}
+        .block_sidebar_item  {text-align: center;}
+        .block_sidebar_item img {float: none; margin: 0 auto 5px auto;}
+        .block_sidebar_item_r {width: 100%;}
+        .sidebar_social_button a {margin: 5px!important;} 
+        .blog_list .blog_item_cont {padding: 10px 30px;} 
+        .step_item {min-height: 84px;}
+        .step_item_vn {font-size: 18px;}
+    }
+    
+    @media only screen and (max-width: 980px){
+        .test:after  { content: '@media (max-width: 980px)';}
+        header .menu{ display: none;}  
+        .logo{width: 50%;}
+        .header_btn{width: 50%; margin-left: 0; text-align: right;}
+        .menu-right-button {display: block;position: relative;right: 0;font-size: 28px;}
+        .container_right_menu {width: 100%;right: -100%;} 
+        .wrapper {padding: 0;} 
+        .container_right_menu .logotype_light {margin-bottom: 25px;}
+        .container_right_menu {padding: 40px 40px 40px 40px;}
+        header {position: relative;min-height: inherit;}
+        .fixed {position: relative;} 
+        .header_bottom {padding: 15px;}
+        .middle_footer{flex-direction: column;}
+        .contact_info{margin-right: 0;display: flex;justify-content: space-between;} 
+        .tabs_l{width: 100%; padding: 0;}
+        .tabs h4{padding-left: 0; margin-top: 0; margin-bottom: 30px;}
+        #dentists .ui-widget-header{display: flex;flex-wrap: wrap; }
+        .tabs .more{margin-left: 0; margin-top: 10px;margin-bottom: 10px;}
+        .tabs_r{width: 100%;}
+        .tabs .tab_content .tab_content_l { padding: 30px 30px 30px 30px; }
+        .dentists .tabs{padding: 0;}
+        .about_left,.about_right{width: 100%;}
+        .contact_info{flex-wrap: wrap;}
+        .work_time{width: 100%;justify-content: center;margin-bottom: 10px;}
+        .work_time_inner{display: flex;}
+        .work_time_inner span{margin-right: 15px;}
+        .work_time_inner span:last-child{margin-right: 0;}
+        .contact_info a, .footer_address{width: 33.3%;text-align: center;}
+        .top_footer{padding: 47px 0;}
+        .news{padding-top: 60px;padding-bottom: 0;} 
+        .brands{padding: 0px 0 60px 0;}
+        .about .about_right .about_image_left img:last-child{margin-bottom: 30px;}
+        .info_blok .contact_us .div_contact_us_address_title_map{padding-left: 15px;}
+        .info_blok .contact_us .div_contact_us_address_title_map iframe{width: 100%;}
+        .header_bottom .container_1336 > .row{display: flex; position: relative;flex-wrap: wrap;}
+        .header_btn{width: 49%;margin: 0;padding-top: 5px;/* text-align: right; */}
+        .about {padding-top: 0;}
+        .info_blok {padding-top: 0;}
+        .contact_map_info {left: 0;top: 0;}
+        .contact_map_content iframe {width: 60%; }
+        .contact_map_info {position: relative;width: 40%;transform: inherit;border-radius: 0;padding: 30px;} 
+        .contact_map_content {overflow: visible;}
+        .contact_map_info__address  {line-height: 1.3;margin-top: 15px;}
+        .header_clock,.header_phone,.header_mail,.header_address{display: none;}
+        .header_social_button{width: 100%;margin: 0 0 0px!important;text-align: center;}
+        .header_social_button a {margin: 0 3px;}
+        .about .about_right{padding-left: 0;}
+        .about .about_right img{margin: 0 15px 30px;}
+        .about .about_right .about_image_left,
+        .about .about_right .about_image_right{width: 100%; padding: 0;display: flex; justify-content: center; align-items: flex-start;flex-wrap: wrap;}
+        .about .about_left .advantages { padding-top: 60px;padding-bottom: 60px;display: flex;justify-content: center;flex-wrap: wrap; }
+        .about .advantages_item{margin: 0 10px 15px!important;}
+        .about .advantages_item:last-child{margin-bottom: 0!important;}
+        .about .advantages_item span strong{display: block;float: none;margin: 0;}
+        .about .advantages_item span{line-height: 25px;}
+        .advantages .advantages_item {width: 100%;}
+        .services_item{width: calc(50% - 30px);}
+        .aboutus .about .about_right .about_image_left {padding: 20px 13px 0 0;} 
+        .aboutus .about .about_right .about_image_left  {padding: 0;}
+        .aboutus .costum_text_img img:nth-child(2) {margin-top: 20px;}
+        .aboutus .about .about_right .about_image_right {padding: 0;}
+        .aboutus .about {margin-bottom: 60px;}
+        .aboutus .gets .advantages .advantages_item:nth-child(2) {margin-left: 0;}
+        .aboutus .news {padding: 60px 0 0px 0;} 
+        .service_page_simple .header_title {padding: 50px 30px;}
+        .header_title h1, h1, .h1 {font-size: 47px;}
+        .title_blog_container h1 {line-height: 1.3;margin-bottom: 15px;}
+        .title_blog_container p {margin-bottom: 20px;} 
+        .blog_grid .blog_item_cont {padding-top: 0;}
+        .prices h4 {text-align: center;margin-bottom: 20px;}
+        .after_before_row {margin: 40px 0 0px 0;}
+        .after_before_row h4 {margin-bottom: 30px;}
+        .blog_item p {margin-bottom: 10px;}
+        .recent_testimonials {    padding: 30px 0px 0px 0px;}
+        .form_row .row-15 {margin: 0 -15px!important;}
+        
+    
+        /* Our Staff Page */
+        #specialists .ui-tabs .ui-tabs-nav li {float: none;}
+        .ourstaff .header_title { padding-bottom: 60px;}
+    
+        /* Our Dentists Page */
+        .ourdentists .head_physician_sign {margin-top: 0;line-height: 1;}
+        .ourdentists .head_physician_sign .dentalic_signature {font-size: 65px;}
+        .ourdentists .head_physician_sign .dentalic_stamp {font-size: 100px;top: 0;}
+        .ourdentists .head_physician .head_physician_text {line-height: 1.8;font-size: 16px;margin-top: 35px;}
+        .ourdentists .head_physician .head_physician_right {padding-top: 0;}
+        #specialists .ui-widget-header {display: block;}
+        #specialists .ui-tabs .ui-tabs-nav li {display: inline-block;}
+        #specialists .ui-widget-header {border: none; padding: 0;}
+        .specialists .specialists_row { margin-bottom: 60px;}
+        .specialists .special_img {width: 25%;}
+        .specialists .special_desk {padding-left: 30px;width: 75%;}
+        footer .contact_info {margin: 0;}
+        .short_bio .list_row ul {min-height: inherit; border: none;    padding: 55px 15px 15px 15px;}
+        #specialists {padding-top: 0;}
+        
+        /* Testimonials Page */
+        .testimonials .item{padding-left: 0;}
+        .testimonials .owl-nav{left: 0;margin: 0 auto;}
+        .leave_feedback {padding: 267px 0 170px 0;margin-top: -198px;}
+        .recent_testimonials_item_l {max-width: auto;width: 70%;padding:0 30px;}
+        .recent_testimonials_item_r {width: 30%;}
+        .recent_testimonials_title {padding-top: 30px;}
+        .testimonials .item .container {padding: 0 30px;}
+        .testimonials .rating_date { margin: 20px auto 0 auto;display: block;max-width: 100px;padding-left: 0;}
+        .make_us_item_rating {padding: 20px;} 
+        .make_us_item_name {padding: 20px 25px 48px 25px;}
+        .testimonials .testimonials_title {top: 50px;}
+        .testimonials .item {padding: 170px 0 85px 0;}
+        .favourite_row_item {padding: 25px 15px;}
+        .testimonials_page .testimonials {margin-bottom: 20px;}
+        .favourite_row_item_name {font-size: 24px; line-height: 1.2;}
+    
+        /* Service Page */
+        .exeptional_desk {font-size: initial;}
+        .posts_item_title {font-size: 34px;margin-bottom: 25px;line-height: normal;}
+        .exeptional_l {width: 75%;}
+        .exeptional_title {margin-bottom: 30px; line-height: 1.3;}
+        .exeptional_img img:last-child {right: 20px;}
+        .posts_item_img , .posts_item_desk{width: 50%;}
+        .posts_item_desk {padding-top: 0;}
+        .can_offer_text p,.posts_item_text p , .strong_team_text p, .header_title p {line-height: normal;}
+        .header_title h1 {margin-bottom: 50px;text-align: center;}
+        .see_testimonials_content {padding: 80px 50px 100px 50px;}
+    
+        /* Simple Service Page */
+        .stories_item .radius_line {display: none;}
+    
+        /* Blog */
+        .title_blog_container {max-width: 90%; margin: 0 auto;}
+        .title_blog_fon {padding: 110px 0px 80px 0px;}
+        .best_news_item {width: 100%; margin-bottom: 30px;}
+        .best_news_item:last-child {margin: 0;}
+        .blog .category_content {padding: 0;} 
+        .category_content h2 {text-align: center; margin-bottom: 30px;}
+    
+        /* Blog Post Page */
+        .blog_post main {padding-top: 50px;}
+        .blog_post h1 {font-size: 52px;}
+        .post_head_date {width: 50%;}
+        .post_head_autor {padding: 0 ;width: 50%;}
+        .post_head_social {width: 100%; text-align: left;margin-top: 30px;}
+        .post_head  {padding-bottom: 30px; margin-bottom: 30px;}
+        .social_like {margin-left: 0; margin-right: 15px;}
+        .post_content .gallery a {margin: 0!important; width: 33%; padding: 10px;}
+        .blockquote_big {line-height: 1.5;font-size: 26px;}
+        .comments {margin-top: 60px;}
+        .comment-respond {padding-top: 60px;}
+        .post_content .gallery {padding-bottom: 60px;}  
+        
+        /* Make an Appointment */ 
+        body .datepicker_row .ui-state-default, body .datepicker_row .ui-widget-content .ui-state-default {    min-height: inherit;padding: 20px 0;min-width: inherit;}
+        .white-popup .infobox_success .more {margin-bottom: 15px;}
+        .step_item_img, .almost_select_img {display: none;}
+        .step_item {min-height: 70px;padding: 0 10px;line-height: 1.4;}
+        .white-popup .infobox_success .h1, .popup_content h3 {font-size: 48px;} 
+        .step_item_desk {padding: 0; text-align: center;}
+        .step_item_vn {font-size: 16px;}
+        .popup_content .row-15 {margin: 0 -15px!important;}
+        .almost_there .almost_select {margin-bottom: 50px;}
+        .white-popup {padding: 30px;}
+
+        /* Contact Page */
+        .contact_row_soc a {width: 32px; height: 32px;margin-left: 15px;}
+        .contact_row_soc a i {font-size: 14px;line-height: 33px;}
+        .contact_row_soc {width: 33%;padding-top: 25px;}
+        .contact_row_title h1 {width: 67%;}
+        .open_hours_contact {margin: 40px 0;}
+        .open_hours_contact .col-3 {padding: 20px;min-height: 140px;}
+        .open_hours_contact .open_hours_block .hours, .open_hours_contact .open_hours_block .minute {font-size: 24px;}
+        .open_hours_contact .open_hours_r .open_hours_block {margin-top: 20px;} 
+    } 
+    
+    @media only screen and (max-width: 767px){
+        .test:after  { content: '@media (max-width: 767px)';}
+        .news .news_item{width: 50%;margin-bottom: 30px;}
+        .slideshow h4 {font-size: 52px!important;line-height: 1.2;}
+        .slideshow .slideshow_heding {padding-top: 40px;min-height: 390px;}
+        .tabs .tab_content .tab_content_desk{margin-top: 5px;}
+        .tabs .tab_content .tab_content_name{font-size: 24px;}
+        .certificates, #dentists {padding: 40px 0;}
+        .tabs .tab_content .tab_content_r {width: 50%;overflow: hidden;}
+        .get_service {padding: 40px 0 40px 0;} 
+        .ourstaff .get_service {margin-top: 0;}
+        .specialists .specialists_row:nth-child(2n) .radius_right , .specialists .specialists_row .radius_right {border-radius: 0;}
+        footer .contact_info {margin: 0;}
+        .footer_address {width: 100%; text-align: center;margin-bottom: 30px;}
+        footer {margin: 0;font-size: 14px; line-height: 1.3;}
+        footer .top_footer {padding: 10px 0 30px;}
+        footer .work_time {margin-bottom: 10px;}
+        footer .contact_info a {margin-bottom: 10px;width: 100%;}
+        footer .middle_footer {padding-bottom: 25px;}
+        main {padding-top: 60px;}
+        footer .footer_menu ul li {margin-bottom: 15px;}
+        .footer_nav {padding: 0 20px;}
+        .aboutus .about .about_left h1 {margin-bottom: 60px;  font-size: 60px;}
+        .about .advantages_item:nth-child(2) {padding: 28px 29px 34px 29px;}
+        .advantages_item:nth-child(2) span {padding-top: 9px;}
+        .info_blok .info_blok_title::before {display: none;}
+        .advantages_item span {padding-top: 7px;}
+        .aboutus .gets, .aboutus .about .about_left .advantages {padding: 60px 0!important;} 
+        .aboutus .why_we_are h4 {margin-bottom: 50px;}
+        .aboutus .why_we_are_item {margin-bottom: 50px;}
+        .aboutus .why_we_are {    padding: 60px 0 30px 0!important;}
+        .aboutus .gets .advantages {padding-left: 0;}
+        .advantages_item {padding: 20px!important;width: 100%!important;text-align: center;margin: 5px 0;}
+        .advantages_item span {float: none!important; width: 100%!important;}
+        .advantages_item strong {margin: 0!important; width: 100%!important;} 
+        .video .container {padding: 0 60px;}
+        .video .container iframe {height: 300px;}
+        .aboutus .gets h4 {margin: 0 auto 50px auto;}
+        .aboutus .gets {padding-bottom: 0!important;}
+        .aboutus .costum_text_content {padding-left: 0;}
+        .contact_map_content {overflow: visible;margin-bottom: 50px;}
+        .contact_map_info__inner {margin-bottom: 20px;}
+        .contact_map_info {padding: 30px 20px 0px 20px;}
+        .contact_map_info__phone {font-size: 22px;line-height: 28px;}
+        .contact_map_info__title {line-height: 1;margin-bottom: 10px;} 
+        .contact_map_content iframe {height: 300px;}
+        .video {padding-bottom: 40px;}
+        .certificates h4{width: 100%; text-align: center; margin-bottom: 20px;}
+        .certificates .navigation{width: 100%; display: flex; justify-content: center; margin-top: 0; margin-bottom: 20px;}
+        .certificates .navigation .owl-prev{margin-right: 15px;}
+        .open_hours,.contact_us{width: 100%;}
+        .info_blok .contact_us {border-left: none;margin-top: 40px;}
+        .info_blok .info_blok_title h4{margin-bottom: 30px;}
+        .info_blok{padding: 0;}
+        .info_blok .contact_us_block,
+        .info_blok .hours_block{margin-bottom: 40px;}
+        .info_blok .contact_us .div_contact_us_address_title_map{padding-left: 0;}
+        .about {padding: 40px 25px;}
+        .about .about_left h4 {text-align: center;}
+        .about .about_left .about_left_text {margin-bottom: 30px;}
+        .tabs .tab_content .tab_content_l {padding: 20px 30px 20px 30px;overflow: hidden;}
+        .tabs .more {margin-top: 0;float: right;}
+        .about .about_left h4 {margin-bottom: 40px;}
+        .header_btn {float: left;} 
+        .news {padding-top: 40px;}
+        .contact_map h4 {margin-bottom: 30px;text-align: center;}
+        .brands {padding: 0px 0 40px 0;}
+        .testimonials .rating_date i {margin-right: 5px;} 
+        .news h4 {margin-bottom: 30px;text-align: center;}
+        .news .news_item:last-child {margin: 0 auto; float: none;}
+        .menu .active .fa-bars:before {content: "\f00d"!important;} 
+        .header_bottom .container_1336 > .row {display: block;}
+        #dentists .ui-tabs .ui-tabs-nav .ui-tabs-anchor {font-size: 16px;}
+        #back-to-top {bottom: 0px;right: 0;} 
+        .aboutus .costum_text_img img:nth-child(2) {float: left;}
+        .brands .brands_title {font-size: 38px;margin-bottom: 20px;}
+        .brands .brands_desc {margin-top: 30px;padding: 0 20px;}
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {line-height: 1.2;}
+        h1, .h1 {font-size: 52px!important;}
+        h2, .h2 {font-size: 42px!important;}
+        h3, .h3 {font-size: 36px!important;}
+        h4, .h4 {font-size: 32px!important;}
+        h5, .h5 {font-size: 24px!important;}
+        h6, .h6 {font-size: 18px!important;}
+        .slideshow_info_block {margin: 0;padding: 0px 20px 30px 20px;line-height: 1.4;}
+        .gallery h4 {margin-bottom: 30px;}
+        .carousel_counter {margin-top: 18px;}
+        .gallery .navigation {margin-top: 0;}
+        .after_before_row {margin:0px 0 0px 0;}
+        
+        /* Our Staff Page */
+        .see_testimonials h3 {font-size: 38px;}
+        .see_testimonials_content {padding: 50px 0;} 
+        .see_testimonials i {font-size: 28px;margin: 8px 0 29px 0;}
+        
+        /* Our Dentists Page */
+        .specialists .special_img {width: 100%;margin-top: 20px;}
+        .specialists .special_desk {padding-left: 0px;width: 100%;text-align: center;}
+        .ourdentists .head_physician h1 {/* font-size: 60px; */text-align: center;margin-bottom: 20px;}
+        .head_physician_row .col-2 {width: 100%;}
+        .head_physician_left {text-align: center; margin-bottom: 20px;}
+        .head_physician_left img {width: 200px;}
+        .head_physician_sign {margin-bottom: 20px;}
+        .ourdentists .head_physician .head_physician_right {text-align: center; padding: 0;}
+        .specialists .specialists_row img {width: 180px;}
+        .specialists .special_desk .special_desk_title_row {padding: 15px 0 15px 0;}
+        .specialists .special_desk .special_desk_title {width: 100%;}
+        .specialists .special_desk .special_desk_soc {width: 100%;text-align: center;padding-top: 10px;}
+        .specialists .special_desk_service_r, .specialists .special_desk_desk {text-align: left;}
+    
+        /* Testimonials Page */
+        .make_us_row h1 {text-align: center;margin-bottom: 50px;font-size: 52px;}
+        .make_us_item {width: 50%; margin-bottom: 70px;}        
+        .leave_feedback {padding: 200px 0 120px 0;} 
+        .leave_feedback:after{height: 370px;} 
+        .testimonials .testimonials_title {top: 40px;} 
+        .testimonials .item {padding: 140px 0 100px 0;}    
+        .favourite {padding: 0;}
+        .favourite h4 {line-height: 1.2; margin-bottom: 30px;}
+        .favourite_row_item_name {font-size: 18px;}
+        .favourite_row_item_date {margin-bottom: 15px;}
+        .what_to_share {padding: 60px 0;margin-bottom: 10px;}
+        .can_offer_text {padding: 0 50px ;}
+        .can_offer_row .container {padding-bottom: 60px;}
+        .service_page_simple .can_offer_row .container {padding-bottom: 0;}
+        .recent_testimonials_item {margin-bottom: 60px;}
+        .favourite_row {padding: 0;margin: 0!important;}
+        .testimonials_page .contact_map h4 {text-align: center;}
+        .recent_testimonials .rating_date {margin-top: 10px;}
+        .can_offer_title {margin-bottom: 30px;}
+        .testimonials .testimonials_title_row { padding-bottom: 22px;}
+        .testimonials_page .testimonials {margin-bottom: 40px;}
+       
+        /* Service Page */
+        .header_title h1 {margin-bottom: 30px;}
+        .strong_team_text {padding: 0 10%;}
+        .strong_team_text h4 {font-size: 34px;}
+        .posts_item_title { font-size: 30px;}
+        .posts_item {padding: 60px 0;}
+        .can_offer_row {padding: 60px 0 0px 0;}
+        .strong_team_row .container {margin-bottom: 0;}
+        .stories_list_title::before {display: none;}
+        .line_arrow_bottom {display: none;} 
+    
+        /* Simple Service Page */
+        .stories_list_title h5 {min-width: 100%;position: relative;padding: 0;margin: 0 0 20px 0;left: 0;transform: inherit;-webkit-transform-origin-x: inherit;}
+        .stories_deck_row_item_desk, .stories_desk , .specialists .special_desk_service_r, .specialists .special_desk_desk {line-height: normal;}
+        .header_i  {top: 27%;}
+        .presentation_row .presentation_title {margin-bottom: 15px;}
+        .presentation_row .presentation_gallery_row {border-bottom: 1px solid white;margin-bottom: 20px;padding-bottom: 20px;}
+        .presentation_row {padding: 60px 0;}
+        .stories_item_number {margin: 0 auto 20px auto;}
+        .stories_list_row {margin-top: 20px;position: relative;}
+        .stories_deck_row_item_desk {padding: 0px 30px 25px 30px;}
+        .twentytwenty-before-label:before, .twentytwenty-after-label:before {height: 133px;width: 65px;line-height: 74px;padding-left: 60px;}
+        .twentytwenty-horizontal .twentytwenty-after-label:before {    padding-right: 64px;}
+        .prices_item_name {font-size: 18px;}
+        .specialists .specialists_row:nth-child(2n) .special_desk {padding: 0!important;}
+        .prices_item_name_price  {width: 28%;}
+        .prices {padding: 50px 0 50px 0;margin: 50px 0;}
+        .prices h4 {text-align: center;font-weight: 400;}
+        .service_page_simple .specialists .specialists_row {margin-bottom: 60px;}
+        .header_title, .service_page_simple .header_title {padding: 0px 30px 30px 30px!important;}
+    
+        /* Blog */
+        .col_left {width: 100%;padding: 0;}
+        .sidebar {width: 100%; padding-top: 20px;}
+        .blog_full_width .blog_item {width: 50%; margin: 0 ; padding: 0px 15px 30px 15px;float: left;} 
+        .blog_full_width .blog_item_img {margin-bottom: 0;}
+        .blog_item_cont, .news .news_item_content{text-align: center;}
+        .title_blog_container p {margin-bottom: 30px;}
+        .blog_item_img {margin-bottom: 30px;}
+        .title_blog_container h1 {line-height: 1.2;margin-bottom: 30px;font-size: 42px;} 
+        
+        /* Blog Post Page */
+        .blockquote_big {line-height: 1.5;font-size: 22px;padding: 40px 0px 40px 0px;margin: 40px 0 40px 0;}
+        .blog .news {padding-top: 20px;}
+        .post_content .gallery {padding-bottom: 0;}
+        .post_content blockquote, .post_content .blockquote_big {margin-top: 60px;}
+        .like_share_block {margin-top: 0;}
+        .post_content h4, .blog_post h1 {margin-bottom: 20px;}
+     
+        /* Make an Appointment */
+        .popup_content h3 {font-size: 32px; margin-bottom: 20px;} 
+        .step_item_vn {padding: 7px; font-size: 15px;}
+        .step_item_desk .doctor_position {margin-top: 5px;line-height: 1.4;}
+        .step_item_desk {padding: 0;text-align: center;width: 100%;}
+        .popup_content h4 {font-size: 32px;}
+        .almost_there .almost_select {margin-bottom: 30px;padding: 25px;}
+        .btn_popup {margin-top: 20px;} 
+        .form_row {margin-top: 30px;}
+        .almost_select .col-3:first-child .almost_details {width: 100%; padding: 0; }
+        .form_row .leable {font-size: 16px;} 
+        .step1_row, .step2_row , .step4_row {margin: 0;} 
+        body .datepicker_row .ui-state-default, body .datepicker_row .ui-widget-content .ui-state-default {padding: 13px 0; font-size: 15px;}
+        .almost_details {padding-bottom: 0;padding-top: 0;}
+        body .datepicker_row .ui-datepicker table {margin: 0 0 20px 0;}
+        
+        /* Contact Page */
+        .contact_row_soc a {width: 32px; height: 32px;margin-left: 15px;}
+        .contact_row_soc a i {font-size: 14px;line-height: 33px;}
+        .contact_row_soc {width: 100%;padding-top: 0px;text-align: center;}
+        .contact_row_title h1 {width: 100%;text-align: center;margin-bottom: 10px;}
+        .open_hours_contact {margin: 40px 0 0px 0;}
+        .open_hours_contact .col-3 {padding: 30px;min-height: inherit;width: 100%;text-align: center;}
+        .open_hours_contact .open_hours_block .hours, .open_hours_contact .open_hours_block .minute {font-size: 34px;}
+        .open_hours_contact .open_hours_r .open_hours_block {margin-top: 20px;}
+        .contact_row_title {margin-bottom: 30px;}
+        .open_hours_contact .open_hours_row {margin-top: 30px;}
+        .open_hours_contact .open_hours_block {display: inline-block;}
+        .open_hours_contact .day {display: block;}
+        
+        /* Tables */
+        main table {margin: auto;border-collapse: collapse;overflow-x: auto;display: block;width: fit-content;max-width: 100%;}
+        main td:first-of-type, main th:first-of-type {border-left: none;}
+        main td:last-of-type, main th:last-of-type {border-right: none;}
+        
+    }
+    
+    @media only screen and (max-width: 568px){
+        .test:after  { content: '@media (max-width: 568px)';}
+        h1, .h1 {font-size: 38px!important;}
+        h2, .h2 {font-size: 32px!important;}
+        h3, .h3 {font-size: 28px!important;}
+        .post_content h4, .post_content .h4 {font-size: 24px!important;} 
+        h4, .h4 {font-size: 32px!important;} 
+        h5, .h5 {font-size: 20px!important;}
+        h6, .h6 {font-size: 16px!important;}
+        .stories_name , .specialists .special_desk .special_desk_name{font-size: 20px!important;}
+        .slideshow h4{font-size: 38px!important;}
+        .top_footer{flex-direction: column;padding: 47px 0 20px;}
+        .footer_logo{margin-bottom: 20px;}
+        .form_row .row-15 {margin: 0!important;}
+        .contact_info{flex-direction: column;align-items: center;margin-bottom: 20px;}
+        .work_time,.contact_info a{margin-bottom: 20px;}
+        .middle_footer{padding-bottom: 0;}
+        .footer_menu .col-4{width: 50%;text-align: left;padding: 5px;}
+        .footer_menu ul{margin-bottom: 0px;text-align: center;padding: 0 10px;}
+        .bottom_footer{flex-direction: column;align-items: center;text-align: center;}
+        .bottom_footer_link{margin-bottom: 20px;}
+        .bottom_footer_link a{margin-right: 0;display: block;}
+        .contact_info a,.footer_address{width: 100%;}
+        .bottom_footer{padding-top: 20px;margin-bottom: 0;}
+        .work_time_inner{display: block;margin-bottom: 10px;}
+        .header_top .container_1336 > .row{flex-direction: column; align-items: center;}  
+        .header_social_button{margin-bottom: 0;}
+        .logo{width: 100%;text-align: center;margin-bottom: 10px;} 
+        .contact_map_content{flex-direction: column;}
+        .contact_map_info{position: relative;left: 0;top: 0; transform: translateY(0);margin-bottom: 15px;padding: 30px;}
+        .contact_map h4{text-align: center;margin-bottom: 25px;}
+        .news .news_item{width: 100%;}
+        .news .news_item:last-child{margin-bottom: 0;}
+        .news .news_item_image::before{background-size: cover;}
+        .news .news_item_image img{width: 100%;}
+        .news h4,.tabs_l,.tabs h4,.about .about_left h4{text-align: center;}
+        .tab_content .row{display: flex; flex-wrap: wrap;}
+        .tabs .tab_content .tab_content_l{width: 100%; padding: 10px a0; text-align: center;}
+        .tabs .tab_content .tab_content_r{width: 100%; order: -1;}
+        .about { padding-top: 60px; padding-bottom: 60px; }
+        .services_item{width: 100%;}
+        .services{padding-top: 60px;margin-top: -100px;}
+        .header_btn{width: 100%;text-align: center;padding-left: 0;}
+        .header_btn .btn_white {float: none;} 
+        h2, .h2 {font-size: 34px!important;}
+        .video .container iframe {height: 200px!important;}
+        .contact_info {margin-bottom: 0;}
+        .video .container {padding: 0 20px;}
+        .contact_map_info {width: 100%;margin-top: 20px;margin-bottom: 0;}
+        .why_we_are_item {width: 100%;}
+        .aboutus .why_we_are_item_icon {    margin: 0 auto 10px auto;} 
+        .aboutus .gets .gets_text, .aboutus .costum_text_content {padding: 0; width: 100%;}
+        .aboutus .gets .advantages {width: 100%; margin-top: 30px;}
+        .aboutus .costum_text_img {padding: 0;width: 100%;margin-bottom: 20px;}
+        .aboutus .costum_text_img img {width: 50%; margin: 0!important; padding: 10px!important;}
+        .gallery_img {padding-bottom: 0;}
+        .container {padding: 0 25px;}
+        .video {padding-bottom: 0;}
+        .contact_map_content iframe {width: 100%; height: 250px;}
+        .footer_nav{position: fixed;top: 0;left: 0;background: var(--theme_color_two);z-index: 999999999999999;width: 100%;height: 100%;padding: 30px;}
+        .info_blok {padding-top: 40px;padding-bottom: 40px;}
+        .aboutus .news {padding-bottom: 0;}
+        .radius_left, .radius_right {border-radius: 0 0 100% 100%; display: block; overflow: hidden;margin: 0 -80px;padding: 0 80px;transform: translateZ(0);text-align: center;}
+        .aboutus .about .about_right .about_image_left, .aboutus .about .about_right .about_image_right {display: block; text-align: center;}
+        .about .about_right img{ margin: 0 0 0px 0; width: 50%; padding: 10px;float: left;}
+        .about .about_right .about_image_left img:last-child {margin-bottom: 0px;}
+        .about_right .about_image_right img:last-child {float: none;}
+        .container_right_menu .footer_item_social a {padding: 5px 10px;}
+        .service_page_simple .header_title {padding: 30px 15px;}
+        .brands .brands_item a {width: 100%;margin: 10px 0;}
+         
+        
+        /* Footer */
+        footer .footer_social_button {/* margin-top: 10px; */}
+        footer .work_time {margin-bottom: 0;}
+        footer .middle_footer {padding-bottom: 15px;}
+        footer .bottom_footer_link a {margin-right: 0;}
+        footer {margin-top: 0;z-index: 999;}
+        footer .top_footer {padding: 10px 0 20px;} 
+        footer .footer_menu ul li {text-align: left;} 
+        footer .footer_menu_close, footer .footer_see {display: block;}
+        footer .footer_nav {display: none;}
+        footer .footer_see {text-align: center;text-decoration: none!important;margin-bottom: 10px;}
+        footer .footer_see span {font-size: 20px;}
+        footer .footer_see i {font-size: 22px;margin-right: 5px;}
+        footer .footer_menu_close {position: absolute;right: 20px;top: 15px;font-size: 22px;z-index: 9999;} 
+     
+        /* Our Staff Page */
+        #specialists .ui-tabs .ui-tabs-nav li {width: 50%;text-align: left;float: left;margin-bottom: 5px;}
+    
+        /* Testimonials Page */
+        .make_us_item {width: 100%;}
+        .leave_feedback p { padding: 0px 0%;line-height: 1.5;}
+        .recent_testimonials_text , .testimonials .owl_testimonials_text , .can_offer_text p {line-height: 1.5;}
+        .can_offer_text {padding: 0;}
+        .favourite_row_item {width: 100%;}
+        .recent_testimonials_item_l {width: 100%; float: none;}
+        .recent_testimonials_item_r {width: 100%; float: none;}
+        .make_us_item_rating_vn {padding: 0px 20px 20px 20px;max-width:100%; margin: 0; }
+        .recent_testimonials_item_l {padding: 25px!important;    border-left: 1px solid #CCCBCB; border-right: 1px solid #CCCBCB;}
+        .recent_testimonials_name {width: 100%; float: none; line-height: 1.3;  font-size: 22px;}
+        .recent_testimonials .rating_date {text-align: center;}
+        .recent_testimonials .rating_date i {margin-right: 5px;}
+        .recent_testimonials h4 {margin-bottom: 40px;}
+        .testimonials .item {padding: 200px 0 30px 0;}
+        .testimonials .owl-carousel .owl_testimonials_top_img img {max-width: 80px;}
+        .testimonials .owl_testimonials_top_r {padding:0 ;}
+        .testimonials .owl_testimonials_top_r_name {line-height: 1.3;  font-size: 22px;}
+        .testimonials .owl-nav {bottom: auto;top: 219px;width: 100%;position: absolute;display: block;padding: 0 30px;left: 0;}
+        .testimonials .owl-carousel .owl-nav .owl-prev {margin: 0;}
+        .recent_testimonials_title img {padding: 0; float: none; display: inline-block;}
+        .recent_testimonials_title {padding-top: 0; text-align: center;padding-bottom: 20px;}
+        .testimonials .testimonials_title{display: flex; flex-direction: column;margin-bottom: 32px;}
+        .testimonials_title_l,.testimonials_title_r{width: 100%;text-align: center!important;}
+        .testimonials .testimonials_title_l h3{text-align: center;margin-bottom: 15px;}
+        .testimonials .owl_testimonials_top{display: flex; flex-direction: column; align-items: center;}
+        .testimonials .owl_testimonials_top_img,
+        .testimonials .owl_testimonials_top_r{width: 100%;text-align: center;}
+        .testimonials .owl-carousel .owl-nav .owl-next {float: right;}
+        .testimonials_page .testimonials {margin-bottom: 40px;}
+        
+        /* Our Dentists Page */
+        .short_bio .short_bio_left {padding: 0; width: 100%; line-height: 1.8;font-size: 16px;}
+        .short_bio .short_bio_right {width: 100%; text-align: center;padding-top: 20px;}
+        .short_bio h4 {text-align: center;}
+        .short_bio .short_bio_deck_row_item {width: 100%;}
+        .short_bio .list_row {margin-top: 20px;}
+        .short_bio .list_row ul {padding: 30px 15px 30px 15px;}
+        .specialists .tab_text {padding: 0;text-align: left;line-height: 1.8;margin-bottom: 55px;}
+        #specialists .ui-tabs .ui-tabs-nav .ui-tabs-anchor { padding: 5px 15px 5px 15px;    border-bottom: 3px solid transparent;}
+        #specialists .ui-tabs .ui-tabs-nav .ui-tabs-anchor::before {display: none;}
+        #specialists .ui-state-active a, #specialists .ui-state-active a:link, #specialists .ui-state-active a:visited , #specialists .ui-state-hover a, #specialists .ui-state-hover a:hover, #specialists .ui-state-hover a:link{border-bottom: 3px solid var(--theme_color)!important;}
+        .specialists .specialists_row:nth-child(2n) .special_desk {padding-right: 0px;}
+        .specialists .special_desk .special_desk_service_icon {width: 100%; text-align: center;}
+        .specialists .special_desk_service_r {width: 100%;text-align: center;}
+        .specialists .special_desk_service_title {text-align: center;}
+        .special_desk_service_list {display: block!important;} 
+        .specialists .special_desk_service_list ul li {width: 100%;margin: 0;display: block;float: none;padding: 0;}
+        .specialists .special_desk_service_list ul li:before { display: none;}	
+    
+        /* Service Page */
+        .title_service p {max-width: 100%;text-align: center;margin-bottom: 30px;}
+        .title_service, .title_service h1 , .exeptional_sub_title, .exeptional_title {text-align: center;}
+        .absolute_img {opacity: 0.4 ;right: 0; width: 100%; text-align: center;}
+        .exeptional_title {margin-bottom: 30px;line-height: 1.2;}
+        .exeptional_l {width: 100%;}
+        .exeptional_img img:last-child {position: relative;top: auto;right: auto;margin: 0;} 
+        .see_testimonials_row { padding: 0px 0 60px 0;}  
+        .exeptional_img img {width: 50%;margin: 0!important;padding: 10px;}
+        .exeptional_img  {margin-top: 30px;}
+        .posts_item_img, .posts_item_desk {width: 100%; padding: 0!important;} 
+        .posts_item {padding:60px 0;}
+        .posts_item_title {text-align: center; margin-top: 20px; margin-bottom: 20px;}
+        .posts_item .more {float: right;}
+        .strong_team_text {padding: 0;} 
+        
+        /* Simple Service Page */
+        .service_page_simple .header_title h1 {line-height: 1.2; font-size: 48px;text-align: center;}
+        .service_page_simple .header_title p {max-width: 100%;}
+        .header_i {top: 0; opacity: 0.4;}
+        .presentation_row .presentation_gallery_row {text-align: center;}
+        .gallery h4, .gallery .navigation {text-align: center;margin: 5px auto 20px auto;}
+        .presentation_row .presentation_carusel {padding: 0;}
+        .presentation_row {padding: 20px 0 0px 0;}
+        .stories_title {padding: 0;}
+        .stories_title h4 {font-size: 34px;}
+        .presentation_row .presentation_gallery_row h4  {margin-bottom: 0;}
+         .presentation_row .presentation_gallery_row .navigation {margin: 0;}
+        .stories_deck_row_item {width: 100%; margin-top: 30px;}
+        .stories_deck_row_item_desk p {margin-bottom: 0;}
+        .prices_item {width: 100%; padding: 10px 0;}
+        .service_page_simple .can_offer_row {padding-top: 60px;}
+        .prices .radius_left {margin: 0;padding: 0;border-radius: 0;}    
+            
+        /* Blog */
+        .title_blog_fon {padding: 40px 0px 40px 0px;}
+        .title_blog_container {padding: 20px;text-align: center;}
+        .title_blog_container h1 {/* line-height: 1.3; */margin-bottom: 15px;font-size: 42px;} 
+        .title_blog_container p {margin-bottom: 20px;}
+        .title_blog_container .btn {min-width: 100%;}
+        .best_news_item {width: 100%; padding:0 0 30px 0;text-align: center;}
+        .best_news_item:last-child {padding: 0;}
+        .category_content h2 {font-size: 42px;margin-bottom: 30px;text-align: center;}
+        .best_news {padding: 50px 0 0px 0;}
+        .blog_grid .blog_item {width: 100%; padding: 0 0 30px 0;}  
+        .blog_full_width .blog_item {width: 100%; padding: 0; margin-bottom: 30px;}
+        .category_content {padding: 47px 0 0px 0;}
+        .blog_list .blog_item_cont {width: 100%;}
+        .blog_list .blog_item_img {width: 100%; margin-bottom: 10px;}
+        .blog_list .blog_item:nth-child(2n) .radius_right {border-radius: 0 0 100% 100%;display: block;overflow: hidden;margin: 0 -80px;padding: 0 80px;transform: translateZ(0);text-align: center;}
+    
+        /* Blog Post */
+        .blog_post h1 {font-size: 32px;text-align: center;/* margin-bottom: 30px; */} 
+        .post_head_date {width: 100%;text-align: center;}
+        .post_head_autor {width: 100%;margin-top: 20px;text-align: center;}
+        .post_head_social {text-align: center;margin-top: 20px;}  
+        .social_like {margin: 0 5px;}  
+        .post_head_autor img {float: none;}
+        .post_head_autor span {float: none;}
+        .post_content_qote {max-width: 100%; margin-bottom: 30px;}
+        .post_img {margin: 30px 0;}
+        .post_content .gallery {text-align: center; margin: 30px 0!important;}
+        .post_content .gallery a {width: 100%;    float: none;}
+        .like_share_block {margin-top: 0;text-align: center;}
+        .like_share {float: none; width: auto; display: inline-block;}
+        .comment_header_title {margin-bottom: 10px; width: 100%; text-align: center;float: none;}
+        .comment_header .skrolurl {float: none;margin: 0 auto;width: 200px;display: block;}
+        .commenter-avatar {display: none;}
+        .comment-box {width: 100%;}
+        .comment.depth-2 {padding-left: 20px;padding-top: 0;margin-top: 14px;}
+        .depth-2 .second-level , .comment {padding-top: 30px; margin-top: 20px;}
+        .comment-respond .comment-form>p {padding: 0;margin-bottom: 0px;}
+        .comment-form-author, .comment-form-email, .comment-form-url {width: 100%; margin-top: 10px;}
+        .radio-toolbar label {width: 50%;}
+        .post_content h4 {/* margin-bottom: 30px; */}
+        .comment .autor {margin-top: 0;}
+        .comment-respond {padding-top: 40px;}
+        .comment-form-comment textarea {margin: 0px 0 15px 0;}
+        .comment-respond .comment-notes {margin-bottom: 15px!important;}
+        .comment-respond .comment-form .submit {margin-top: 15px;}
+        
+        /* Make an Appointment */
+        .step_item_img {display: none;}
+        .btn_popup a, .send, .btn_popup button {min-width: 100px;margin: 0 10px;}
+        body .datepicker_row .ui-state-default, body .datepicker_row .ui-widget-content .ui-state-default {min-height: inherit;padding: 10px 0;min-width: inherit;font-size: 14px;}
+        body .datepicker_row .ui-datepicker .ui-d {font-size: 30px;}
+        .form_row .col-2 {}
+        body .datepicker_row .ui-datepicker .ui-datepicker-title {font-size: 24px; line-height: normal;}
+        .step_item {min-height: 80px;}
+        .almost_select .col-3 {width: 100%;}
+        #step4 .radio-toolbar label {width: 25%;}
+        #step4 .step_item_vn {padding: 0;}
+        .white-popup .infobox_success .h1 {font-size: 24px;}
+        .almost_select .col-3:first-child {width: 100%;} 
+        .almost_select_img {display: none!important;}
+        .white-popup .infobox_success {    padding: 10px 0px 30px 0px;}
+        
+        /* Contact Page */ 
+        .contact_row_title h1 {   line-height: 1.2; font-size: 42px;}
+        .contact_row .form_row .col-3 {width: 100%;padding: 0;}
+        .open_hours_contact {margin-bottom: 0;}
+        .popup_content .row-15 {margin: 0 -15px!important;}
+    }
+    
+    @media only screen  and (max-width: 480px) {
+        .test:after  { content: '@media (max-width: 480px)';}
+        .owl-nav{display: flex;justify-content: center;}
+        .slideshow .slideshow_heding{padding-top: 25px;min-height: 345px;} 
+        .owl-carousel .owl-item img{margin: 0 auto;} 
+        .about .advantages_item{margin-left: 0!important;margin-right: 0!important;width: 100%;}
+        .about .advantages_item span{display: block;}
+        .about .about_right img {width: 100%;padding: 0;margin-bottom: 20px!important;}
+        .footer_menu .col-4 {width: 50%;padding: 5px;}
+        .white-popup {padding: 20px;} 
+    }
+    
+    @media only screen  and (max-width: 320px) {
+        .test:after  { content: '@media (max-width: 320px)';}
+        .radio-toolbar label {width: 100%;}
+        .footer_menu .col-4{width: 100%;text-align: center;padding: 0;}
+    }
+        
+    
