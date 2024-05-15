@@ -1369,7 +1369,7 @@ Version: 1.0
         footer .footer_social_button a:hover {background-color: var(--theme_color_three);text-decoration: none;}
         footer .footer_social_button a:hover i {color: var(--theme_color);}
         footer .middle_footer{padding-bottom: 66px;display: flex;}
-        footer .contact_info{margin-right: 173px;}
+        footer .contact_info{margin-right: 240px;}
         footer .contact_info a{display: block;margin-bottom: 26px;}
         footer .contact_info i{margin-right: 11px;}
         footer .work_time{margin-bottom: 31px;display: flex;align-items: baseline;}
