@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dental Clinic Website</title>
+        <meta name="description" content="DiDent - Dental Clinic HTML Template"/> 
+        <meta name="author" content="http://owl-themes.net/"/>
+        <meta name="theme-color" content="#1783D3">
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon -->
+        <link rel="icon" href="img/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="img/favicon_192x192.png" sizes="192x192" />
+        <link rel="apple-touch-icon-precomposed" href="img/favicon_180x180.png" />
+        <meta name="msapplication-TileImage" content="img/favicon_270x270.png" /> 
+        <style type="text/css">
+            .preloader{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                background-color: #FFF;
+                text-align: center;
+            }
+            .preloader_animation{
+                width: 100px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .preloader_animation svg{
+                animation: heartbeat 1s infinite;
+                fill: var(--theme_color);
+            }
+            @keyframes heartbeat{
+                0%{transform: scale( .75 );}
+                20%{transform: scale( 1 );}
+                40%{transform: scale( .75 );}
+                60%{transform: scale( 1 );}
+                80%{transform: scale( .75 );}
+                100%{transform: scale( .75 );}
+            }
+        </style>
+        <!-- Google fonts --> 
+        <link href="https://fonts.googleapis.com/css?family=Hind:400,600%7CSource+Sans+Pro:300,400,600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet';this.display='swap'">
+        <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+        
+        <!-- Include style --> 
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Include owl carousel style --> 
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- Include jquery ui -->  
+        <link rel="stylesheet" href="css/jquery-ui.css"> 
+        <!-- Include font-awesome --> 
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <!-- Responsive style --> 
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body class="service_page">  
+        <div class="preloader">
+            <div class="preloader_animation">
+                <svg id="Layer_1"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><title>tooth</title><path d="M316.54,550.47q-.36-11.67-.49-23.35c-.32-29.6-3.9-54.78-20.56-80.11C267,403.74,257.7,355.76,259.33,304.82c2.28-71.37,41-119.16,106.45-129.85,27.08-4.43,53.58.75,77.24,13.22,39.56,20.84,77,20.66,116.95.4,36.4-18.44,75.57-21.17,113.88-4,49.7,22.24,68.94,64.74,72.32,115.8,3.4,51.34-5.7,100.28-34.33,144.21-15.55,23.86-22.15,49.18-21.54,78.24,1.56,74.77-2,149.53-26.7,221-7.93,22.95-21.69,44.37-35.56,64.59-8.61,12.55-22.56,22.56-40,16.29-18.35-6.58-21.13-23-24-40Q550.06,703.18,534.28,622c-2.4-12.27-7.56-24.4-13.58-35.43-4-7.3-11.45-14.23-18.13-18.78-26,23.21-34.19,59-40.75,91.83-8.53,42.71-13.64,86.1-20.28,129.19C439.2,804,435,818.11,418.83,824.61s-27.9-2.15-38.31-12.55c-28.2-28.15-41-64.47-47.69-102.06A1109.44,1109.44,0,0,1,316.54,550.47Zm280,246.39c24.2-16.59,33.23-39.12,40.48-62.18,21.11-67.18,26.58-136.72,25.11-206.41-.78-37,7.41-69.24,26-100.65C713.82,384.28,721.42,336.8,714.4,287c-6.48-46-36.84-78.7-82.21-81.59-20.48-1.3-43.19,4.24-62.15,12.78-45.39,20.44-89.11,22.89-133.8-.28-8.25-4.28-17.45-6.93-26.44-9.5-56.13-16.06-106.5,12.85-117.76,70.09-10.35,52.6-3.56,103.36,25.44,149.94,14.71,23.62,25.76,48.14,26.61,77.23,1.51,51.85,3.64,103.8,8.78,155.39,5,50.37,18.57,96.89,53.31,134.69,12.22-24.76,13-56.28,17.8-83.54,5.45-31.19,11.2-62.34,18.55-93.14,5.59-23.39,18.55-46.1,32.5-66.1,14.54-20.84,38.8-20.33,55.17-.66,10.4,12.5,20.06,27.18,24.82,42.51,11.42,36.79,21,74.28,28.92,112C589.9,735.18,592.16,764.35,596.57,796.87Z"/><path d="M373.39,245c24.16,1.24,8.7,24.67,1.95,35a66.12,66.12,0,0,0-10.54,31.47c-1.73,24,5.75,48.89,16.55,70,5.17,10.11,16.85,31.45-1.32,36.23-11.24,3-21.82-11-26.53-19.34-8.17-14.48-12.69-31-15.79-47.19a157.15,157.15,0,0,1,4.49-75.53c3.89-12.67,15.61-30.93,30.59-30.71Z"/></svg>
+            </div>
+        </div>
+        <!-- Wrapper start -->
+        <div class="wrapper">
+            <!-- HEADER start -->
+            <header>
+                <div id="site-header" class="sticky">
+                    <!-- Header top start -->
+                    <div class="row header_top"> 
+                        <div class="container_1336">
+                            <div class="row">
+                                <!-- Start clock -->
+                                <div class="header_clock"> 
+                                    <i class="fa fa-clock-o"></i>
+                                    <span>Mon–Fri 10:00 am–6:00 pm</span> 
+                                    <span>Sat–Sun 11:00 am– 4:00 pm</span>
+                                </div>
+                                <!-- End clock -->
+                                <!-- Start phone -->
+                                <a href="tel:16501234000" class="header_phone">
+                                    <i class="fa fa-phone"></i>+ 1 650 123-4000
+                                </a>
+                                <!-- End phone -->
+                                <!-- Start mail -->
+                                <a href="mailto:youremail@domain.com" class="header_mail">
+                                    <i class="fa fa-envelope"></i>youremail@domain.com
+                                </a>
+                                <!-- End mail --> 
+                                <!-- Start address -->
+                                <div class="header_address">
+                                    <i class="fa fa-map-marker"></i>27 Castro St, Main City, State, XYZ123
+                                </div>
+                                <!-- End address -->
+                                <!-- Start social button -->
+                                <div class="header_social_button">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                    <a href="#"><i class="fa fa-vk"></i></a>  
+                                    <a href="#"><i class="fa fa-yelp"></i></a>
+                                </div>
+                                <!-- End social button -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Header top end --> 
+                    
+                    <!-- Header bottom start --> 
+                    <div class="row header_bottom">  
+                        <div class="container_1336">
+                            <div class="row"> 
+                                <!-- LOGO start -->
+                                <div class="logo">
+                                    <a href=""><img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/logo_blue.png" data-srcset="img/logo_blue.png, img/logo_blue@2x.png 2x" alt="DiDent" /></a>
+                                </div> 
+                                <!-- LOGO end -->
+                                
+                                <!-- Headr Button start -->
+                                <div class="header_btn">
+                                    <div class="popup"><a href="#step1" data-effect="mfp-zoom-in" class="step1 btn_white">Make an Appointment</a></div>
+                                </div>
+                                <!-- Headr Button end -->
+                                
+                                <!-- NAVIGATION start -->
+                                <div class="menu"> 
+                                    <nav>
+                                        <ul>
+                                            <li>
+                                                <a href="index.html">Home</a>
+                                            </li> 
+                                            <li class="ul_sub">
+                                                <a href="aboutus.html">About Us</a> 
+                                                <ul>
+                                                    <li><a href="aboutus.html">About Us</a></li>
+                                                    <li><a href="ourdentists.html">Our Dentists</a></li>
+                                                    <li><a href="ourstaff.html">Our Staff</a></li>
+                                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                                </ul> 
+                                            </li> 
+                                            <li>
+                                                <a href="service.html">Services</a>
+                                            </li> 
+                                            <li>
+                                                <a href="testimonials.html">Testimonials</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog.html">Blog</a>    
+                                            </li> 
+                                            <li><a href="contact.html">Contact Us</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- NAVIGATION end -->
+                                
+                                <!-- Mobile Menu start -->
+                                <nav class="nav" id="menu_right_sidebar">
+                                    <div class="menu-right-button open-button"><i class="fa fa-bars"></i></div>
+                                    <div class="container_right_menu">
+                                        <span class="close-button"><i class="fa fa-times"></i></span>
+                                        <div class="row header_menu"> 
+                                            <div class="row logotype_light">
+                                                <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/logo_blue.png" data-srcset="img/logo_blue.png, img/logo_blue@2x.png 2x" alt="DiDent - Dental Clinic HTML Template">
+                                            </div>
+                                            <div id="dl-menu" class="dl-menuwrapper">
+                                                <ul class="dl-menu dl-menuopen"> 
+                                                    <li>
+                                                        <a href="">Home</a>
+                                                        <ul class="dl-submenu">
+                                                            <li><a href="http://dental.owl-themes.net/">Default color</a></li>
+                                                            <li><a href="http://dental.owl-themes.net/green/">Green color</a></li>
+                                                            <li><a href="http://dental.owl-themes.net/orange/">Orange color</a></li>
+                                                            <li><a href="http://dental.owl-themes.net/pink/">Pink color</a></li>
+                                                            <li><a href="http://dental.owl-themes.net/purple/">Purple color</a></li>
+                                                        </ul>
+                                                    </li> 
+                                                    
+                                                    <li>
+                                                        <a href="aboutus.html">About Us</a> 
+                                                        <ul class="dl-submenu">
+                                                            <li><a href="aboutus.html">About Us Page</a> </li>
+                                                            <li><a href="ourdentists.html">Our Dentists</a></li>
+                                                            <li><a href="ourstaff.html">Our Staff</a></li> 
+                                                        </ul> 
+                                                    </li> 
+                                                    <li>
+                                                    <a href="service.html">Services</a>
+                                                        <ul class="dl-submenu">
+                                                            <li><a href="service.html">Service Page</a></li>
+                                                            <li><a href="service_page.html">Service Details</a></li> 
+                                                        </ul>  
+                                                    </li> 
+                                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                                    <li>
+                                                        <a href="blog.html">Blog</a>
+                                                        <ul class="dl-submenu">
+                                                            <li><a href="blog.html">Blog Default</a></li>
+                                                            <li><a href="blog_full_width.html">Blog Full Width</a></li>
+                                                            <li><a href="blog_grid.html">Blog Grid</a></li>
+                                                            <li><a href="blog_list.html">Blog List</a></li>
+                                                            <li><a href="blog_post.html">Blog Post</a></li>
+                                                        </ul>    
+                                                    </li> 
+                                                    <li><a href="contact.html">Contact Us</a></li> 
+                                                    <li><a href="http://dental.owl-themes.net/documentation/">Element & Documentation</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row footer_item_social">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a href="#"><i class="fa fa-youtube"></i></a>
+                                            <a href="#"><i class="fa fa-vk"></i></a>  
+                                            <a href="#"><i class="fa fa-yelp"></i></a>
+                                        </div>
+                                        <div class="row menu_contact">
+                                            <ul>
+                                                <li><i class="fa fa-map-marker"></i> <address>27 Castro St, Mountain View, CA 94043</address></li>
+                                                <li><i class="fa fa-phone"></i> Phone: + 1 650 123-4000</li>
+                                                <li><i class="fa fa-envelope-o"></i>youremail@domain.com</li>
+                                                <li><i class="fa fa-clock-o"></i> Mon–Fri 10:00 am–6:00 pm</li>
+                                                <li><i class="fa fa-clock-o"></i> Sat–Sun 11:00 am– 4:00 pm</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <!-- Mobile Menu end --> 
+                            </div> 
+                        </div>
+                    </div> 
+                    <!-- Header bottom end -->
+                </div>
+            </header>
+
+            <!--  Main start -->
+            <main> 
+
+                <!-- Service block top start -->
+                <div class="overflow_hidden">
+                    <div class="radius_niz_mini"> 
+                        <div class="row header_title title_service">
+                            <div class="container"> 
+                                <div class="header_title_content">
+                                    <h1>Services</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <div class="popup"><a href="#step1" data-effect="mfp-zoom-in" class="step1 btn">Make an Appointment</a></div>
+                                </div>
+                                <img src="img/img_tooth.png" class="absolute_img" data-srcset="img/img_tooth.png, img/img_tooth@2x.png 2x" alt="DiDent" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service block top end -->
+
+                <!-- Service start -->
+                <div class="row services">
+                    <div class="overflow_hidden">
+                        <div class="radius_row_niz services_row">
+                            <div class="container">
+                                <div class="row row-15">
+                                    <!-- Service item start -->
+                                    <a href="service_details.html" class="services_item">
+                                        <span class="services_item_title">Cosmetic Dentistry</span>
+                                        <span class="services_item_desc">Vineers, whitening, bonding, fillings etc.</span>
+                                        <i class="dental_icon dentalic_cosmetic"></i>
+                                    </a>
+                                    <!-- Service item end -->
+                                    <!-- Service item start -->
+                                    <a href="service_details.html" class="services_item">
+                                        <span class="services_item_title">General Dentistry</span>
+                                        <span class="services_item_desc">Cleanings, checkups, sleep apnea etc.</span>
+                                        <i class="dental_icon dentalic_general"></i>
+                                    </a>
+                                    <!-- Service item end -->
+                                    <!-- Service item start -->
+                                    <a href="service_details.html" class="services_item">
+                                        <span class="services_item_title">Restorations</span>
+                                        <span class="services_item_desc">Implants, crowns, dentures, bridges etc.</span>
+                                        <i class="dental_icon dentalic_restorations"></i>
+                                    </a>
+                                    <!-- Service item end -->
+                                    <!-- Service item start -->
+                                    <a href="service_details.html" class="services_item">
+                                        <span class="services_item_title">Orthodontics</span>
+                                        <span class="services_item_desc">Invisalign, metal braces, expanders</span>
+                                        <i class="dental_icon dentalic_iorthodontics"></i>
+                                    </a>
+                                    <!-- Service item end -->
+                                    <!-- Service item start -->
+                                    <a href="service_details.html" class="services_item">
+                                        <span class="services_item_title">Oral Surgery</span>
+                                        <span class="services_item_desc">Dental extractions, root canals, tissue</span>
+                                        <i class="dental_icon dentalic_combined"></i>
+                                    </a>
+                                    <!-- Service item end -->
+                                    <!-- Service item start -->
+                                    <a href="service_details.html" class="services_item">
+                                        <span class="services_item_title">Pediatric Dentistry</span>
+                                        <span class="services_item_desc">Oral health of infants, children, adolescents</span>
+                                        <i class="dental_icon dentalic_pediatric"></i>
+                                    </a>
+                                    <!-- Service item end -->
+                                    <!-- Service item start -->
+                                    <a href="service_details.html" class="services_item">
+                                        <span class="services_item_title">Emergency Dentistry</span>
+                                        <span class="services_item_desc">Invisalign, metal braces, expanders</span>
+                                        <i class="dental_icon dentalic_emergency"></i>
+                                    </a>
+                                    <!-- Service item end -->
+                                    <!-- Service item start -->
+                                    <a href="service_details.html" class="services_item">
+                                        <span class="services_item_title">Preventative Dentistry</span>
+                                        <span class="services_item_desc">Dental extractions, root canals, tissue</span>
+                                        <i class="dental_icon dentalic_preventative"></i>
+                                    </a>
+                                    <!-- Service item end -->
+                                    <!-- Service item start -->
+                                    <a href="service_details.html" class="services_item">
+                                        <span class="services_item_title">Other Services</span>
+                                        <span class="services_item_desc">Oral health of infants, children, adolescents</span>
+                                        <i class="dental_icon dentalic_other_services"></i>
+                                    </a>
+                                    <!-- Service item end -->
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service end -->
+
+                <!-- See Testimonials Block start -->
+                <div class="row see_testimonials_row">
+                    <div class="container overflow_hidden">
+                        <div class="see_testimonials background_blue radius_mini row"> 
+                            <div class="center_blue  row">
+                                <div class="see_testimonials_content">
+                                    <h3>We are good at what we do. <br> And no doubts</h3>
+                                    <div><i class="fa fa-angle-double-down" aria-hidden="true"></i></div>
+                                    <a href="testimonials.html" class="btn_transparent">See Testimonials</a>
+                                </div> 
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- See Testimonials Block end --> 
+
+                <!-- Exeptional Specialists Block start -->
+                <div class="row exeptional_row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2 exeptional_l">
+                                <div class="exeptional_text">
+                                    <h5 class="exeptional_sub_title">
+                                        Exeptional Specialists
+                                    </h5>
+                                    <div class="exeptional_title">Great experience of our team</div>
+                                    <div class="exeptional_desk">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row exeptional_img">
+                            <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/gallery_2.png" data-srcset="img/gallery_2.png, img/gallery_2@2x.png 2x" alt="DiDent">
+                            <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/gallery_5.png" data-srcset="img/gallery_5.png, img/gallery_5@2x.png 2x" alt="DiDent">
+                            <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/gallery_4.png" data-srcset="img/gallery_4.png, img/gallery_4@2x.png 2x" alt="DiDent">
+                            <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/gallery_3.png" data-srcset="img/gallery_3.png, img/gallery_3@2x.png 2x" alt="DiDent">
+                            <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/gallery_1.png" data-srcset="img/gallery_1.png, img/gallery_1@2x.png 2x" alt="DiDent"> 
+                        </div>
+                    </div>
+                </div> 
+                <!-- Exeptional Specialists Block end -->
+                
+                <!-- What We Can Offer start -->
+                <div class="row can_offer_row">
+                    <div class="container">
+                        <div class="can_offer_title">
+                            <i class="dental_icon dentalic_offers"></i> 
+                            <div class="can_offer_title_lite"></div>
+                        </div>
+                        <div class="row can_offer_text">
+                            <h4>What We Can Offer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- What We Can Offer end --> 
+                
+                <!-- Posts start -->
+                <div class="row posts_row"> 
+                    <!-- Posts item start -->
+                    <div class="row posts_item">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-1-60 posts_item_img">
+                                    <div class="radius">
+                                        <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/cosmetic_dentistry_photo.png" data-srcset="img/cosmetic_dentistry_photo.png, img/cosmetic_dentistry_photo@2x.png 2x" alt="DiDent">
+                                    </div>
+                                </div>
+                                <div class="col-1-40 posts_item_desk">
+                                    <div class="posts_item_title">Cosmetic Dentistry</div>
+                                    <div class="posts_item_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="blog_post.html" class="more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Posts item end -->
+                    
+                    <!-- Posts item start -->
+                    <div class="row posts_item">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-1-60 posts_item_img">
+                                    <div class="radius">
+                                        <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/general_dentistry_photo.png" data-srcset="img/general_dentistry_photo.png, img/general_dentistry_photo@2x.jpg 2x" alt="DiDent">
+                                    </div>
+                                </div>
+                                <div class="col-1-40 posts_item_desk">
+                                    <div class="posts_item_title">General Dentistry</div>
+                                    <div class="posts_item_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="blog_post.html" class="more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Posts item end -->
+                    
+                    <!-- Posts item start -->
+                    <div class="row posts_item">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-1-60 posts_item_img">
+                                    <div class="radius">
+                                        <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/restorations_photo.png" data-srcset="img/restorations_photo.png, img/restorations_photo@2x.png 2x" alt="DiDent">
+                                    </div>
+                                </div>
+                                <div class="col-1-40 posts_item_desk">
+                                    <div class="posts_item_title">Restorations</div>
+                                    <div class="posts_item_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="blog_post.html" class="more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Posts item end -->
+                    
+                    <!-- Posts item start -->
+                    <div class="row posts_item">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-1-60 posts_item_img">
+                                    <div class="radius">
+                                        <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/orthodontics_photo.png" data-srcset="img/orthodontics_photo.png, img/orthodontics_photo@2x.png 2x" alt="DiDent">
+                                    </div>
+                                </div>
+                                <div class="col-1-40 posts_item_desk">
+                                    <div class="posts_item_title">Orthodontics</div>
+                                    <div class="posts_item_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="blog_post.html" class="more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Posts item end -->
+                    
+                    <!-- Posts item start -->
+                    <div class="row posts_item">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-1-60 posts_item_img">
+                                    <div class="radius">
+                                        <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/oral_surgery_photo.png" data-srcset="img/oral_surgery_photo.png, img/oral_surgery_photo@2x.png 2x" alt="DiDent">
+                                    </div>
+                                </div>
+                                <div class="col-1-40 posts_item_desk">
+                                    <div class="posts_item_title">Oral Surgery</div>
+                                    <div class="posts_item_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="blog_post.html" class="more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Posts item end -->
+                    
+                    <!-- Posts item start -->
+                    <div class="row posts_item">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-1-60 posts_item_img">
+                                    <div class="radius">
+                                        <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/pediatric_dentistry_photo.png" data-srcset="img/pediatric_dentistry_photo.png, img/pediatric_dentistry_photo@2x.png 2x" alt="DiDent">
+                                    </div>
+                                </div>
+                                <div class="col-1-40 posts_item_desk">
+                                    <div class="posts_item_title">Pediatric Dentistry</div>
+                                    <div class="posts_item_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="blog_post.html" class="more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Posts item end --> 
+                    
+                    <!-- Posts item start -->
+                    <div class="row posts_item">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-1-60 posts_item_img">
+                                    <div class="radius">
+                                        <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/emergency_dentistry_photo.png" data-srcset="img/emergency_dentistry_photo.png, img/emergency_dentistry_photo@2x.png 2x" alt="DiDent">
+                                    </div>
+                                </div>
+                                <div class="col-1-40 posts_item_desk">
+                                    <div class="posts_item_title">Emergency Dentistry</div>
+                                    <div class="posts_item_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="blog_post.html" class="more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Posts item end --> 
+                    
+                    <!-- Posts item start -->
+                    <div class="row posts_item">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-1-60 posts_item_img">
+                                    <div class="radius">
+                                        <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/preventative_dentistry_photo.png" data-srcset="img/preventative_dentistry_photo.png, img/preventative_dentistry_photo@2x.png 2x" alt="DiDent">
+                                    </div>
+                                </div>
+                                <div class="col-1-40 posts_item_desk">
+                                    <div class="posts_item_title">Preventative Dentistry</div>
+                                    <div class="posts_item_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="blog_post.html" class="more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Posts item end -->
+                    
+                    <!-- Posts item start -->
+                    <div class="row posts_item">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-1-60 posts_item_img">
+                                    <div class="radius">
+                                        <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/other_services_photo.png" data-srcset="img/other_services_photo.png, img/other_services_photo@2x.png 2x" alt="DiDent">
+                                    </div>
+                                </div>
+                                <div class="col-1-40 posts_item_desk">
+                                    <div class="posts_item_title">Other Services</div>
+                                    <div class="posts_item_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="blog_post.html" class="more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Posts item end -->
+                    
+                </div>
+                <!-- Posts end -->
+                
+                
+                
+                <!-- Strong Team start -->
+                <div class="row strong_team_row">
+                    <div class="container">
+                        <div class="strong_team_title">
+                            <i class="dental_icon dentalic_staff"></i>
+                            <div class="strong_team_title_lite"></div>
+                        </div>
+                        <div class="row strong_team_text">
+                            <h4>Strong Team of Our Practice</h4>
+                            <img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/team_photo_small.png" data-srcset="img/team_photo_small.png, img/team_photo_small@2x.png 2x" alt="DiDent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit</p>
+                            <a href="ourdentists.html" class="btn">See Our Dentists</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Strong Team end -->
+            </main>
+            <!--  Main end -->
+            
+        </div>
+
+
+        <!-- Start Contact Us -->
+        <div class="contact_map">
+            <div class="container">
+                <div class="row">
+                    <h4>Contact Us</h4>
+                    <div class="contact_map_content">
+                        <iframe class="lozad" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.967410377096!2d-111.89998968453055!3d33.31966746342457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDE5JzEwLjgiTiAxMTHCsDUzJzUyLjEiVw!5e0!3m2!1sen!2sus!4v1516690469899" height="490" style="border:0" allowfullscreen></iframe>
+                        <div class="contact_map_info row">
+                            <div class="contact_map_info__inner">
+                                <div class="contact_map_info__title">Phone</div>
+                                <div class="contact_map_info__phone">+1 650 123-4000</div>
+                            </div>
+                            <div class="contact_map_info__inner">
+                                <div class="contact_map_info__title">Email</div>
+                                <div class="contact_map_info__email">
+                                    <a href="mailto:dentalclinic@domain.com">dentalclinic@domain.com</a>
+                                </div>
+                            </div>
+                            <div class="contact_map_info__inner">
+                                <div class="contact_map_info__title">Address</div>
+                                <div class="contact_map_info__address">27 Castro St, Main City, State XYZ123</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact Us -->
+
+        <!-- Footer start -->
+        <footer>
+            <div class="svg_blue"> 
+                <svg width="100%" height="100%" viewBox="0 0 653 46.107558"><defs><path d="M0 30a1789 1789 0 0 1 653 0v304a1823 1823 0 0 1-653 0z" id="a"/><clipPath  ><path stroke-width="1.00255799" d="M-1-1h656v47H-1z"/></clipPath></defs><use xlink:href="#a" width="100%" height="100%" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="footer_row background_blue row">
+                <div class="container">
+                    <!-- Start top_footer -->
+                    <div class="top_footer">
+                        <!-- Start footer_logo -->
+                        <a href="" class="footer_logo">
+                            <img class="lozad" src="img/foot_logo.png" data-src="img/foot_logo.png" data-srcset="img/foot_logo.png, img/foot_logo@2x.png 2x" alt="DiDent - Dental Clinic HTML Template" />
+                        </a>
+                        <!-- End footer_logo -->
+                        <!-- Start footer_social_button -->
+                        <div class="footer_social_button">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-yelp"></i></a>
+                        </div>
+                        <!-- End footer_social_button -->
+                    </div>
+                    <!-- End top_footer -->
+        
+                    <!-- Start middle_footer -->
+                    <div class="middle_footer">
+                        <!-- Start contact_info -->
+                        <div class="contact_info">
+                            <div class="work_time">
+                                <i class="fa fa-clock-o"></i>
+                                <div class="work_time_inner">
+                                    <span>Mon–Fri 10:00 am–6:00 pm</span>
+                                    <span>Sat–Sun 11:00 am– 4:00 pm</span>
+                                </div>
+                            </div>
+                            <a href="tel:16501234000"><i class="fa fa-phone"></i>+ 1 650 123-4000</a>
+                            <a href="mailto:youremail@domain.com">
+                                <i class="fa fa-envelope"></i>youremail@domain.com
+                            </a>
+                            <div class="footer_address">
+                                <i class="fa fa-map-marker"></i>27 Castro St, Main City, State, XYZ123
+                            </div>
+                        </div>
+                        <!-- End contact_info -->
+                        <!-- Start footer_menu -->
+                        <div class="footer_menu">
+                            <a class="footer_see" href="#" onclick="return false"><i class="fa fa-bars"></i> <span>Navigation</span> </a>
+                            
+                            <div class="row footer_nav">
+                                <a class="footer_menu_close" title="Close"><i class="fa fa-times" aria-hidden="true"></i></a>  
+                                <div class="col-2">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="aboutus.html">About Us Page</a></li>
+                                        <li><a href="ourdentists.html">Our Dentists</a></li>
+                                        <li><a href="ourstaff.html">Our Staff</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-2">
+                                    <ul>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="testimonials.html">Testimonials</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End footer_menu -->
+                    </div>
+                    <!-- End middle_footer -->
+        
+                    <!-- Start bottom_footer -->
+                    <div class="bottom_footer">
+                        <div class="bottom_footer_link popup">
+                            <a href="#step1" data-effect="mfp-zoom-in" class="step1">Make an Appointment</a>
+                            <a href="#">Leave Feedback</a>
+                            <a href="#">Write Us</a>
+                        </div>
+                        <!-- Start copyright -->
+                        <div class="copyright">
+                            © 2024. All Rights Reserved
+                        </div>
+                        <!-- End copyright -->
+                    </div>
+                    <!-- End bottom_footer -->
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->  
+
+        <!-- Back to top -->
+        <div id="back-to-top" title="Back to top"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+        <!-- Back to top end-->
+    
+        <form class="fofm">
+            <!-- Popup Step 1 -->
+            <div id="step1" class="white-popup mfp-with-anim mfp-hide order_popup">
+                <div class="popup_content">
+                    <!-- Choose a Dentist -->
+                    <div class="row step1_row">
+                        <div class="prod_checbox">
+                            <div class="radio-toolbar">
+                                <h3>Choose a Dentist</h3>
+                                <div class="row">
+                                    <!-- Any Dentist -->
+                                    <input type="radio" id="radio9" class="radio_name" name="radio" value="Any Dentist">
+                                    <label for="radio9">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                <span class="doctor_name">Any Dentist</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Any Dentist -->
+
+                                    <!-- Dr. Katherin Black -->
+                                    <input type="radio" id="radio1" class="radio_name" name="radio" value="Dr. Katherin Black">
+                                    <label for="radio1">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                <span class="step_item_img radius_right">
+                                                    <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/dentist_photo_2l.png" data-srcset="img/dentist_photo_2l.png, img/dentist_photo_2l@2x.png 2x" alt="DiDent">
+                                                </span>
+                                                <span class="step_item_desk">
+                                                    <span class="doctor_name">Dr. Katherin Black</span>
+                                                    <span class="doctor_position">Orthodontist</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Dr. Katherin Black -->
+
+                                    <!-- Dr. Helen Bristen -->
+                                    <input type="radio" id="radio2" class="radio_name" name="radio" value="Dr. Helen Bristen">
+                                    <label for="radio2">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                <span class="step_item_img radius_right">
+                                                    <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/dentist_photo_3l.png" data-srcset="img/dentist_photo_3l.png, img/dentist_photo_3l@2x.png 2x" alt="DiDent">
+                                                </span>
+                                                <span class="step_item_desk">
+                                                    <span class="doctor_name">Dr. Helen Bristen</span>
+                                                    <span class="doctor_position">General Dentist</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Dr. Helen Bristen -->
+
+                                    <!-- Dr. Michael Johnson -->
+                                    <input type="radio" id="radio3" class="radio_name" name="radio" value="Dr. Michael Johnson">
+                                    <label for="radio3">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                <span class="step_item_img radius_right">
+                                                    <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/main_dentistl.png" data-srcset="img/main_dentistl.png, img/main_dentistl@2x.png 2x" alt="DiDent">
+                                                </span>
+                                                <span class="step_item_desk">
+                                                    <span class="doctor_name">Dr. Michael Johnson</span>
+                                                    <span class="doctor_position">General and Cosmetic Dentist</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Dr. Michael Johnson -->
+
+
+                                    <!-- Dr. Brett Armstrong -->
+                                    <input type="radio" id="radio4" class="radio_name" name="radio" value="Dr. Brett Armstrong">
+                                    <label for="radio4">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                <span class="step_item_img radius_right">
+                                                    <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/dentist_photo_4l.png" data-srcset="img/dentist_photo_4l.png, img/dentist_photo_4l@2x.png 2x" alt="DiDent">
+                                                </span>
+                                                <span class="step_item_desk">
+                                                    <span class="doctor_name">Dr. Brett Armstrong</span>
+                                                    <span class="doctor_position">Periodontist</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Dr. Brett Armstrong -->
+
+                                    <!--  Dr. Jennifer Wilson -->
+                                    <input type="radio" id="radio5" class="radio_name" name="radio" value=" Dr. Jennifer Wilson">
+                                    <label for="radio5">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                <span class="step_item_img radius_right">
+                                                    <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/dentist_photo_5l.png" data-srcset="img/dentist_photo_5l.png, img/dentist_photo_5l@2x.png 2x" alt="DiDent">
+                                                </span>
+                                                <span class="step_item_desk">
+                                                    <span class="doctor_name">Dr. Jennifer Wilson</span>
+                                                    <span class="doctor_position">Endodontist</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!--  Dr. Jennifer Wilson -->
+
+                                    <!-- Dr. George Wilson -->
+                                    <input type="radio" id="radio6" class="radio_name" name="radio" value="Dr. George Wilson">
+                                    <label for="radio6">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                <span class="step_item_img radius_right">
+                                                    <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/dentist_photo_1l.png" data-srcset="img/dentist_photo_1l.png, img/dentist_photo_1l@2x.png 2x" alt="DiDent">
+                                                </span>
+                                                <span class="step_item_desk">
+                                                    <span class="doctor_name">Dr. George Wilson</span>
+                                                    <span class="doctor_position">Dental Surgeon</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Dr. George Wilson -->
+
+                                    <!-- Dr. Nicole Green -->
+                                    <input type="radio" id="radio7" class="radio_name" name="radio" value="Dr. Nicole Green">
+                                    <label for="radio7">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                <span class="step_item_img radius_right">
+                                                    <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/staff_photo_2l.png" data-srcset="img/staff_photo_2l.png, img/staff_photo_2l@2x.png 2x" alt="DiDent">
+                                                </span>
+                                                <span class="step_item_desk">
+                                                    <span class="doctor_name">Dr. Nicole Green</span>
+                                                    <span class="doctor_position">Orthodontist</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Dr. Nicole Green -->
+
+                                    <!-- Dr. John Ridwell -->
+                                    <input type="radio" id="radio8" class="radio_name" name="radio" value="Dr. John Ridwell">
+                                    <label for="radio8">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                <span class="step_item_img radius_right">
+                                                    <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/staff_photo_1l.png" data-srcset="img/staff_photo_1l.png, img/staff_photo_1l@2x.png 2x" alt="DiDent">
+                                                </span>
+                                                <span class="step_item_desk">
+                                                    <span class="doctor_name">Dr. John Ridwell</span>
+                                                    <span class="doctor_position">General and Cosmetic Dentist</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Dr. John Ridwell -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Prev and next step button -->
+                        <div class="center btn_popup">
+                            <a href="#step2" class="btn step-next step2">Next</a>
+                        </div>
+                        <!-- Prev and next step button -->
+
+                        <!-- footer popup -->
+                        <div class="footer_popup">
+                            If you need immediate assistance, please call us at + 1 650 123-4000
+                            <span>© 2024. All Rights Reserved</span>
+                        </div>
+                        <!-- footer popup -->
+                    </div>
+                    <!-- Choose a Dentist -->   
+                </div> 
+            </div>
+            <!-- Popup Step 1 -->
+            
+            <!-- Popup Step 2 -->
+            <div id="step2" class="white-popup mfp-with-anim mfp-hide order_popup">
+                <div class="popup_content">
+                    <!-- Please Provide a Visit Reason -->
+                    <div class="row step2_row">
+                        <div class="prod_checbox">
+                            <div class="radio-toolbar">
+                                <h3>Please Provide a Visit Reason</h3>
+                                <div class="row">
+                                    <!-- Broken Tooth -->
+                                    <input type="radio" id="radio10" class="radio_service" name="radio_service" value="Broken Tooth">
+                                    <label for="radio10">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                Broken Tooth
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Broken Tooth -->
+
+                                    <!-- Check-up and Cleaning -->
+                                    <input type="radio" id="radio11" class="radio_service" name="radio_service" value="Check-up and Cleaning">
+                                    <label for="radio11">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                Check-up and Cleaning
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Check-up and Cleaning -->
+
+                                    <!-- Dental Check-up and X-Rays -->
+                                    <input type="radio" id="radio12" class="radio_service" name="radio_service" value="Dental Check-up and X-Rays">
+                                    <label for="radio12">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                Dental Check-up and X-Rays
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Dental Check-up and X-Rays -->
+
+                                    <!-- General Consultation -->
+                                    <input type="radio" id="radio13" class="radio_service" name="radio_service" value="General Consultation">
+                                    <label for="radio13">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                General Consultation
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- General Consultation -->
+
+                                    <!-- Jaw Joint Pain -->
+                                    <input type="radio" id="radio14" class="radio_service" name="radio_service" value="Jaw Joint Pain">
+                                    <label for="radio14">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                Jaw Joint Pain
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Jaw Joint Pain -->
+
+                                    <!-- Teeth Whitening -->
+                                    <input type="radio" id="radio15" class="radio_service" name="radio_service" value="Teeth Whitening">
+                                    <label for="radio15">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                Teeth Whitening
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Teeth Whitening -->
+
+                                    <!-- Veneers -->
+                                    <input type="radio" id="radio16" class="radio_service" name="radio_service" value="Veneers">
+                                    <label for="radio16">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                Veneers
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Veneers -->
+
+                                    <!-- Wisdom Teeth Extractions -->
+                                    <input type="radio" id="radio17" class="radio_service" name="radio_service" value="Wisdom Teeth Extractions">
+                                    <label for="radio17">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                Wisdom Teeth Extractions
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Wisdom Teeth Extractions -->
+
+                                    <!-- Other -->
+                                    <input type="radio" id="radio18" class="radio_service" name="radio_service" value="Other">
+                                    <label for="radio18">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                Other
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- Other -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Prev and next step button -->
+                        <div class="center btn_popup">
+                            <a href="#step1" class="btn step1">Prev</a>
+                            <a href="#step3" class="btn step-next step3">Next</a>
+                        </div>
+                        <!-- Prev and next step button -->
+                        <!-- footer popup -->
+                        <div class="footer_popup">
+                            If you need immediate assistance, please call us at + 1 650 123-4000
+                            <span>© 2024. All Rights Reserved</span>
+                        </div>
+                        <!-- footer popup -->
+                    </div>
+                    <!-- Please Provide a Visit Reason -->
+                </div> 
+            </div>
+            <!-- Popup Step 2 -->
+            
+            <!-- Popup Step 3 -->
+            <div id="step3" class="white-popup mfp-with-anim mfp-hide order_popup">
+                <div class="popup_content">
+                    <!-- Start input date -->
+                    <div class="step3_row datepicker_row row">
+                        <div class="datepicker_row_title">
+                            <h3>Choose a Date</h3>
+                            <div class="btn_white">First Available: Tomorrow at 10:00 am</div>
+                        </div>
+                        <div class="row datepicker">
+                            <div id="datepicker"></div>
+                            <input class="reserv_input posDate" id="temp_date_start" type="hidden"  name="posDate">
+                        </div>
+
+                        <!-- Prev and next step button -->
+                        <div class="center btn_popup">
+                            <a href="#step2" class="btn step2">Prev</a>
+                            <a href="#step4" class="btn step-next step4">Next</a>
+                        </div>
+                        <!-- Prev and next step button -->
+
+                        <!-- footer popup -->
+                        <div class="footer_popup">
+                            If you need immediate assistance, please call us at + 1 650 123-4000
+                            <span>© 2024. All Rights Reserved</span>
+                        </div>
+                        <!-- footer popup -->
+                    </div>
+                    <!-- End input date -->
+                </div> 
+            </div>
+            <!-- Popup Step 3 -->
+            
+            <!-- Popup Step 4 -->
+            <div id="step4" class="white-popup mfp-with-anim mfp-hide order_popup">
+                <div class="popup_content">
+                    <!-- Start input time -->
+                    <div class="row step4_row">
+                        <div class="prod_checbox">
+                            <div class="radio-toolbar">
+                                <h3>Choose a Time</h3>
+                                <div class="row">
+                                    <!-- 10:00 am -->
+                                    <input type="radio" id="radio_time1" class="radio_time" name="radio_time" value="10:00 am">
+                                    <label for="radio_time1">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                10:00 am
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- 10:00 am -->
+
+                                    <!-- 11:00 am -->
+                                    <input type="radio" id="radio_time2" class="radio_time" name="radio_time" value="11:00 am">
+                                    <label for="radio_time2">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                11:00 am
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- 11:00 am -->
+
+                                    <!-- 12:00 am -->
+                                    <input type="radio" id="radio_time3" class="radio_time" name="radio_time" value="12:00 am">
+                                    <label for="radio_time3">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                12:00 am
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- 12:00 am -->
+
+                                    <!-- 1:00 am -->
+                                    <input type="radio" id="radio_time4" class="radio_time" name="radio_time" value="1:00 am">
+                                    <label for="radio_time4">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                1:00 am
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- 1:00 am -->
+
+                                    <!-- 2:00 am -->
+                                    <input type="radio" id="radio_time5" class="radio_time" name="radio_time" value="2:00 am">
+                                    <label for="radio_time5">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                2:00 am
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- 2:00 am -->
+
+                                    <!-- 3:00 am -->
+                                    <input type="radio" id="radio_time6" class="radio_time" name="radio_time" value="3:00 am">
+                                    <label for="radio_time6">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                3:00 am
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- 3:00 am -->
+
+                                    <!-- 4:00 am -->
+                                    <input type="radio" id="radio_time7" class="radio_time" name="radio_time" value="4:00 am">
+                                    <label for="radio_time7">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                4:00 am
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- 4:00 am -->
+
+                                    <!-- 5:00 am -->
+                                    <input type="radio" id="radio_time8" class="radio_time" name="radio_time" value="5:00 am">
+                                    <label for="radio_time8">
+                                        <span class="step_item_vn">
+                                            <span class="row step_item align-items-center">
+                                                5:00 am
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <!-- 5:00 am -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Prev and next step button -->
+                        <div class="center btn_popup">
+                            <a href="#step3" class="btn step3">Prev</a>
+                            <a href="#step5" class="btn step-next step5">Next</a>
+                        </div>
+                        <!-- Prev and next step button -->
+
+                        <!-- footer popup -->
+                        <div class="footer_popup">
+                            If you need immediate assistance, please call us at + 1 650 123-4000
+                            <span>© 2024. All Rights Reserved</span>
+                        </div>
+                        <!-- footer popup -->
+                    </div>
+                    <!-- end input time -->
+                </div> 
+            </div>
+            <!-- Popup Step 4 -->
+        
+            <!-- Popup Step 5 -->
+            <div id="step5" class="white-popup mfp-with-anim mfp-hide order_popup">
+                <div class="popup_content">
+                    <!-- Almost There -->
+                    <div class="row step5_row almost_there">
+                        <h3>Almost There!</h3>
+
+                        <div class="row almost_select">
+                            <div class="col-3">
+                                <div class="almost_select_img radius_right">
+                                    <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/dentist_photo_4l.png" data-srcset="img/dentist_photo_4l.png, img/dentist_photo_4l@2x.png 2x" alt="DiDent">
+                                </div>
+                                <div class="almost_details">
+                                    <div class="almost_doc_position">Dentist</div>
+                                    <div class="almost_doc_name">Dr. Jennifer Wilson</div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="almost_details">
+                                    <div class="almost_title">Reason</div>
+                                    <div class="almost_reason">Check-up and Cleaning</div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="almost_details">
+                                    <div class="almost_title">Date & Time</div>
+                                    <div class="almost_date">April 19 at 10:00 am</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contact Information -->
+                        <div class="row contact_information_row">
+                            <h4>Contact Information</h4>
+                            <p>Reach us with your questions. We are looking forward hearing form you!</p>
+
+                            <div class="row form_row">
+                                <div class="row row-15">
+                                    <div class="col-2">
+                                        <div class="leable">Full Name</div>
+                                        <input class="posName" type="text" name="posName">
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="leable">Email</div>
+                                        <input class="posEmail" type="email" name="posEmail" />
+                                    </div>
+                                </div>
+                                <div class="leable">Phone (ex. 650 123-4000)</div>
+                                <input class="posTel" type="text" name="posTel"> 
+                            </div>
+
+                            <div class="process"></div>
+                            <div class="center btn_popup">
+                            <a href="#step4" class="btn step4">Prev</a>
+                            <button type="button" class="button send">Submit</button>
+                            </div> 
+                        </div>
+                        <!-- Contact Information -->
+    
+                        <!-- footer popup -->
+                        <div class="footer_popup">
+                            If you need immediate assistance, please call us at + 1 650 123-4000
+                            <span>© 2024. All Rights Reserved</span>
+                        </div>
+                        <!-- footer popup -->
+                    </div>
+                    <!-- Almost There -->
+                </div> 
+            </div>
+            <!-- Popup Step 5 -->
+        </form>  
+
+
+        <!-- JS -->
+        <script src="js/compress/modernizr.custom.js"></script>
+        <!-- Jquery -->
+        <script src="js/compress/jquery-3.2.1.js"></script>  
+        <script src="js/compress/jquery-ui.js"></script>
+        <script async src="js/compress/jquery.viewportchecker.js"></script>  
+        <!-- Sidebar menu --> 
+        <script src="js/compress/jquery.dlmenu.js"></script>
+        <!-- Image lazy load -->
+        <script src="js/compress/lozad.js"></script> 
+        <!-- Owl carousel -->
+        <script async src="js/compress/owl.carousel.js"></script>
+        <!-- Magnific-popup js -->
+        <script async src="js/compress/jquery.magnific-popup.js"></script>
+        <!-- After-Before Script -->
+        <script async src="js/compress/jquery.event.move.js"></script>
+        <script src="js/compress/jquery.twentytwenty.js"></script>
+        <!-- Custom JS -->
+        <script async src="js/custom.js"></script>  
+    
+    </body>
+</html> 
